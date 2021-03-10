@@ -1,11 +1,11 @@
 $vcenterservers = 'vcenter'
 $vcenterusername = 'administrator@vsphere.local'
-$vcenteruserpwd = 'password'
-$alarmfile = import-csv E:\vsphere65-alarms.csv
-$AlertEmailRecipients = @("email@gmail.com")
+$vcenteruserpwd = 'Changeme@123'
+$alarmfile = import-csv /Users/matthewdicecca/Documents/GitHub/scripting/vsphere65-alarms.csv
+$AlertEmailRecipients = @("matthewvdicecca@gmail.com")
 $SMTPServer = "smtp.kgas.local"
 $SMTPPort = "25"
-$SMTPSendingAddress = "vcenter"
+$SMTPSendingAddress = "vcenter@kgas.local"
  
 #Import PowerCLI module
 import-module -name VMware.PowerCLI
