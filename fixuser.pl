@@ -40,7 +40,7 @@ foreach my $username (@users) {
 printf "Username is: $username ";
 my $accounttype = `/usr/bin/dscl . -read /Users/$username OriginalNodeName`;
 
-   unless ($accounttype =~ //Active Directory//) {
+unless ($accounttype =~ "Active Directory") {
     printf "Next: $username is not a mobile account"; next;
 }
 
